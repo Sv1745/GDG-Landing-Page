@@ -19,6 +19,20 @@ const events = [
   }
 ];
 
+function toggleMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('active');
+}
+
+function closeMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  menuToggle.classList.remove('active');
+  navLinks.classList.remove('active');
+}
+
 function populateEvents() {
   const eventGrid = document.getElementById('eventGrid');
   events.forEach(event => {
@@ -70,6 +84,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
       });
+      closeMenu();
   });
 });
 
