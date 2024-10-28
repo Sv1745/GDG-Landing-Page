@@ -1,19 +1,19 @@
 const events = [
   {
       title: 'Flutter Workshop',
-      date: '2024-03-15',
+      date: '2024-11-15',
       time: '2:00 PM',
       description: 'Learn to build cross-platform apps with Flutter'
   },
   {
       title: 'Cloud Study Jam',
-      date: '2024-03-20',
+      date: '2024-11-20',
       time: '3:00 PM',
       description: 'Deep dive into Google Cloud Platform'
   },
   {
       title: 'Android Dev Days',
-      date: '2024-03-25',
+      date: '2024-11-25',
       time: '10:00 AM',
       description: 'Explore the latest in Android development'
   }
